@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>first semester</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        table,td,th{
+            text-align: center;
+            margin: auto;
+        }
+        table{
+            width: 700px;
+            height: 500px;
+            margin-top: 10px;
+            font-size: 18px;
+            border: solid 0.5px;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        td,th{
+            padding: 10px;
+        }
+        input{
+            width: 50px;
+            height: 28px;
+            border: none;
+            background-color: pink;
+            text-align: center;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            background-image: url("bg.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        #sub1{
+            width: 150px;
+            height: 45px;
+            background-color:pink;
+            border-radius: 5px;
+            font-size:16px;
+            border: none;
+            color: white;
+            font-weight:bold;
+        }
+        .table_head{
+            background-color: pink;
+            border: 1px solid rgb(171, 98, 98);
+        }
+        .table_design{
+            background-color:rgb(244, 236, 239);
+        }
+        #result1{
+            background-color: white;
+            color: black;
+        }
+        #sgpa_box{
+            width: 200px;  
+            height: 180px;
+            text-align: center;
+        }
+        #sgpa1{
+            width: 38%;
+            float: left;
+            text-align: center;
+            color: pink;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #sgpa2{
+            width: 62%;
+            float: left;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h1{
+            font-family: sans-serif;
+            color: pink;
+        }
+        .footer{
+            background-color: red;
+            width: 100%;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <h1>FIRST SEMESTER</h1>
+            <table>
+                <tr>
+                    <th colspan="4" class="table_head">SGPA CALCULATOR</th>
+                </tr>
+                <tr class="table_head">
+                    <th>Sl.No</th>
+                    <th>Course Code</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td class="table_design">1</td>
+                    <td>1001</td>
+                    <td class="table_design">Communication Skills In English</td>
+                    <td><input type="text" id="s11001"></td>
+                </tr>
+                <tr>
+                    <td class="table_design">2</td>
+                    <td>1002</td>
+                    <td class="table_design">Mathematics I</td>
+                    <td><input type="text" id="s11002"></td>
+                </tr>
+                <tr>
+                    <td class="table_design">3</td>
+                    <td>1003</td>
+                    <td class="table_design">Applied Physics I</td>
+                    <td><input type="text" id="s11003"></td>
+                </tr>
+                <tr>
+                    <td class="table_design">4</td>
+                    <td>1004</td>
+                    <td class="table_design">Applied Chemistry</td>
+                    <td><input type="text" id="s11004"></td>
+                </tr>
+                <tr>
+                    <td class="table_design">5</td>
+                    <td>1005</td>
+                    <td class="table_design">Engineering Graphics</td>
+                    <td><input type="text" id="s11005"></td>
+                </tr>
+                <tr>
+                    <td class="table_design">6</td>
+                    <td>1007</td>
+                    <td class="table_design">Applied Chemistry Lab</td>
+                    <td><input type="text" id="s11007"></td>
+                </tr>
+                <tr>
+                    <td class="table_design">7</td>
+                    <td>1008</td>
+                    <td class="table_design">Introduction to IT Systems Lab</td>
+                    <td><input type="text" id="s11008"></td>
+                </tr>
+                <tr>
+                    <td class="table_design">8</td>
+                    <td>1009</td>
+                    <td class="table_design">Sports and Yoga</td>
+                    <td><input type="text" id="s11009"></td>
+                </tr>
+            </table>
+            <br>
+            <button onclick="second()" id="sub2">submit</button><br><br>
+            <center><div id="sgpa_box">
+                <div id="sgpa1"><h3>SGPA : </h3></div>
+                <div id="sgpa2"><P id="result2"></p></div>
+            </div>
+        </center>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
